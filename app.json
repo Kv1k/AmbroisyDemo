@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "ambroisy-firebase",
+    "slug": "ambroisy-firebase",
+    "notification": {
+      "icon": "./assets/favicon.png",
+      "androidMode": "default"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ],
+        "NSCameraUsageDescription": "L’application utilise l’appareil photo pous scanner les produits.",
+        "NSLocationWhenInUseUsageDescription": "L’application utilise votre position pour aider a trouver les magasins et produits autour de vous."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyDck2mylHO9FTXPtisI0TrDoXRCfOokWo0"
+    }
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.ambroisy.firebase",
+      "versionCode": 6,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config":{
+        "googleMaps":{
+          "apiKey": "AIzaSyDck2mylHO9FTXPtisI0TrDoXRCfOokWo0"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
